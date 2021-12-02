@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/lineEarnings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvEarnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="TOTAL EARNINGS:"
+            android:fontFamily="@font/calibri"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalEarnings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="$500"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/calibri"
+            android:textSize="24dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineWorkDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvFinish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="TOTAL FINISHED WORKS:"
+            android:fontFamily="@font/calibri"
+            android:textSize="24dp"/>
+
+        <TextView
+            android:id="@+id/tvTotalFinishWorks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="20"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/calibri"
+            android:textSize="24dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/noWorkDone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textNoWorkDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="NO WORK DONE.."
+            android:fontFamily="@font/calibri"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/exitEarningView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foreground="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:text="CANCEL"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
